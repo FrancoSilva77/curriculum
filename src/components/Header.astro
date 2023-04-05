@@ -1,0 +1,121 @@
+<header>
+  <div class="header__center">
+    <!-- nav header -->
+    <div class="header__left">
+      <h2 class="header__logo">Franco Silva</h2>
+
+      <button class="header__toggle">
+        <i class="bx bx-menu"></i>
+      </button>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">home</a>
+      <a class="nav__link" href="about.html">about</a>
+      <a class="nav__link" href="projects.html">projects</a>
+      <a class="nav__link" href="contact.html">contact</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  @media (min-width: 768px) {
+    .header__center {
+      max-width: 120rem;
+      margin: 0 auto;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3rem;
+    }
+  }
+
+  .header__left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .header__left {
+      padding: 0;
+    }
+  }
+
+  .header__toggle {
+    font-size: 2rem;
+    color: #fff;
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    .header__toggle {
+      display: none;
+    }
+  }
+
+  .header__toggle:hover {
+    transform: rotate(180deg);
+  }
+
+  .header__logo {
+    font-size: 4rem;
+  }
+
+  .nav {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      height: auto;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .nav__link {
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+
+  @media (min-width: 768px) {
+    .nav__link {
+      padding: 1rem;
+      margin: 0;
+      transition: var(--transition);
+    }
+    .nav__link:hover {
+      padding: 0.2rem;
+      border-radius: var(--radius);
+      color: #000;
+      background-color: #fff;
+    }
+  }
+
+  .nav__link:hover {
+    padding-left: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .nav__link:hover {
+      padding-left: 1.5rem;
+    }
+  }
+
+  .show__nav {
+    height: 15rem;
+  }
+</style>
