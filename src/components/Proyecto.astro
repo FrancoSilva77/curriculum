@@ -1,0 +1,49 @@
+---
+export interface Props {
+  titulo: string;
+  descripcion: string;
+  imagen: string;
+  enlace: string;
+}
+
+const { titulo, descripcion, imagen, enlace } = Astro.props;
+---
+
+<article class="proyecto">
+  <img class="proyecto__imagen" src={imagen} alt={imagen} />
+  <h3>{titulo}</h3>
+  <p>{descripcion}</p>
+  <a href={enlace}>Ver proyecto</a>
+</article>
+
+<style>
+  .proyecto {
+    padding: 3rem;
+  }
+
+  .proyecto h3 {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 2.8rem;
+  }
+  
+  .proyecto a {
+    display: block;
+    font-size: 1.8rem;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+  }
+  .proyecto a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+</style>
