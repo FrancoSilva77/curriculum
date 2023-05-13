@@ -10,10 +10,15 @@ const { titulo, descripcion, imagen, enlace } = Astro.props;
 ---
 
 <article class="proyecto">
-  <img class="proyecto__imagen" src={imagen} alt={imagen} />
-  <h3>{titulo}</h3>
-  <p>{descripcion}</p>
-  <a href={enlace}>Ver proyecto</a>
+  <div class="proyecto__imagen">
+    <img src={imagen} alt={imagen} />
+  </div>
+
+  <div class="proyecto__contenido">
+    <h3>{titulo}</h3>
+    <p>{descripcion}</p>
+    <a href={enlace}>Ver proyecto</a>
+  </div>
 </article>
 
 <style>
@@ -21,12 +26,31 @@ const { titulo, descripcion, imagen, enlace } = Astro.props;
     padding: 3rem;
   }
 
+  @media (min-width: 768px) {
+    .proyecto {
+      display: flex;
+      gap: 5rem;
+      align-items: center;
+    }
+  }
+
+  .proyecto__contenido,
+  .proyecto__imagen {
+    flex: 1;
+  }
+
+  
+  .proyecto:nth-child(even) .proyecto__contenido {
+    order: -1;
+  }
+
+
   .proyecto h3 {
     text-align: center;
     margin: 2rem 0;
     font-size: 2.8rem;
   }
-  
+
   .proyecto a {
     display: block;
     font-size: 1.8rem;
@@ -39,11 +63,10 @@ const { titulo, descripcion, imagen, enlace } = Astro.props;
     width: 80%;
     font-weight: bold;
     border-radius: 1rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .proyecto a:hover {
     background-color: #fff;
     color: #000;
   }
-  
 </style>
