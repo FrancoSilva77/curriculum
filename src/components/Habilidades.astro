@@ -1,0 +1,51 @@
+<section id="habilidades" class="habilidades section-center">
+  <h2 class="habilidades__heading">Habilidades</h2>
+
+  <div class="habilidades__grid">
+    <p class="habilidad">HTML</p>
+    <p class="habilidad">CSS</p>
+    <p class="habilidad">SASS</p>
+    <p class="habilidad">JAVASCRIPT</p>
+    <p class="habilidad">REACT</p>
+    <p class="habilidad">NODE.JS</p>
+    <p class="habilidad">EXPRESS</p>
+    <p class="habilidad">PHP</p>
+    <p class="habilidad">MYSQL</p>
+    <p class="habilidad">GIT</p>
+  </div>
+  
+</section>
+
+
+<style>
+  .habilidades {
+    margin-top: 5rem;
+  }
+
+  .habilidades__heading {
+    font-size: 3.6rem;
+    text-align: center;
+    margin: 3rem 0;
+  }
+
+  .habilidades__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px){
+    .habilidades__grid {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  .habilidad {
+    color: var(--blanco);
+    padding: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+  }
+  
+</style>
