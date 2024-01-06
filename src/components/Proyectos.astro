@@ -1,14 +1,20 @@
 ---
-import Proyecto from "./Proyecto.astro";
+import Proyecto from './Proyecto.astro';
 
-import proyecto_1 from "/img/01-cotizador-prestamos-react.png";
-import proyecto_2 from "/img/02-planificador-gastos-react.png";
-import proyecto_3 from "/img/03-buscador-de-bebidas.png";
-import proyecto_4 from "/img/04-cotizador-de-seguros.png";
-import proyecto_5 from "/img/05-cafeteria-cafe.png";
+import proyecto_1 from '/img/01-cotizador-prestamos-react.png';
+import proyecto_2 from '/img/02-planificador-gastos-react.png';
+import proyecto_3 from '/img/03-buscador-de-bebidas.png';
+import proyecto_4 from '/img/04-cotizador-de-seguros.png';
+import proyecto_5 from '/img/05-cafeteria-cafe.png';
+import proyecto_6 from '/img/06-control-presupuesto-js.png';
+import proyecto_7 from '/img/07-uptask-php.png';
+import proyecto_8 from '/img/08-barberia-php.png';
 ---
 
-<section class="proyectos contenedor" id="proyectos">
+<section
+  class="proyectos contenedor"
+  id="proyectos"
+>
   <h2 class="proyectos__heading">Proyectos</h2>
   <div class="proyectos__grid">
     <Proyecto
@@ -18,16 +24,16 @@ import proyecto_5 from "/img/05-cafeteria-cafe.png";
       enlace="https://cafeteria-cafe-fs.netlify.app/"
     />
     <Proyecto
+      titulo="Control de presupuesto"
+      descripcion="Este proyecto está realizado con HTML, CSS y Javascript"
+      imagen={proyecto_6}
+      enlace="https://gasto-semanal-franco.netlify.app/"
+    />
+    <Proyecto
       titulo="Cotizador de prestamos"
       descripcion="Este proyecto está construído con React y utiliza Vite, tailwind, componentes, props, useState, useEffect."
       imagen={proyecto_1}
       enlace="https://cotizador-deprestamos-react.netlify.app/"
-    />
-    <Proyecto
-      titulo="Planificador de gastos"
-      descripcion="Este proyecto está construído con React y utiliza Vite, tailwind, modales, componentes, props, useState, useEffect, localStorage."
-      imagen={proyecto_2}
-      enlace="https://control-de-presupuesto-react.vercel.app/"
     />
     <Proyecto
       titulo="Buscador de Bebidas"
@@ -36,10 +42,17 @@ import proyecto_5 from "/img/05-cafeteria-cafe.png";
       enlace="https://buscadordebebidas-react.vercel.app/"
     />
     <Proyecto
-      titulo="Cotizador de seguros"
-      descripcion="Este proyecto está construído en React y utiliza Vite, tailwind, utiliza Context."
-      imagen={proyecto_4}
-      enlace="https://cotizador-seguros-ten.vercel.app/"
+      titulo="Uptask - Administrador de proyectos"
+      descripcion="Este proyecto está construído en PHP con MVC, CSS, SASS, Javascript, MySql, etc "
+      imagen={proyecto_7}
+      enlace="https://uptask-franco.alwaysdata.net/"
+    />
+
+    <Proyecto
+      titulo="Barberia - Gestión de citas"
+      descripcion="Este proyecto está construído en PHP con MVC, CSS, SASS, Javascript, MySql, etc "
+      imagen={proyecto_8}
+      enlace="https://barberiafranco.alwaysdata.net/"
     />
   </div>
 </section>
@@ -48,7 +61,11 @@ import proyecto_5 from "/img/05-cafeteria-cafe.png";
   .proyectos__heading {
     font-size: 3.6rem;
     text-align: center;
-    margin: 3rem 0;
+    margin: 5rem 0;
   }
-  
+
+  .proyectos__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 </style>

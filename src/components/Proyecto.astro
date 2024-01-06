@@ -28,7 +28,6 @@ const { titulo, descripcion, imagen, enlace } = Astro.props;
 
   @media (min-width: 768px) {
     .proyecto {
-      display: flex;
       gap: 5rem;
       align-items: center;
     }
@@ -38,12 +37,6 @@ const { titulo, descripcion, imagen, enlace } = Astro.props;
   .proyecto__imagen {
     flex: 1;
   }
-
-  
-  .proyecto:nth-child(even) .proyecto__contenido {
-    order: -1;
-  }
-
 
   .proyecto h3 {
     text-align: center;
