@@ -46,14 +46,18 @@ import proyecto_8 from '/img/08-barberia-php.png';
       descripcion="Este proyecto está construído en PHP con MVC, CSS, SASS, Javascript, MySql, etc "
       imagen={proyecto_7}
       enlace="https://uptask-franco.alwaysdata.net/"
-    />
+    >
+      <a href="/uptask">Funcionalidad del proyecto</a>
+    </Proyecto>
 
     <Proyecto
       titulo="Barberia - Gestión de citas"
       descripcion="Este proyecto está construído en PHP con MVC, CSS, SASS, Javascript, MySql, etc "
       imagen={proyecto_8}
       enlace="https://barberiafranco.alwaysdata.net/"
-    />
+    >
+      <a href="/barberia">Funcionalidad del proyecto</a>
+    </Proyecto>
   </div>
 </section>
 
@@ -67,5 +71,24 @@ import proyecto_8 from '/img/08-barberia-php.png';
   .proyectos__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proyectos a {
+    display: block;
+    font-size: 1.8rem;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+    font-weight: bold;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .proyectos a:hover {
+    background-color: #fff;
+    color: #000;
   }
 </style>

@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LayoutProyecto from '../layouts/LayoutProyecto.astro';
+---
+
+<Layout title="uptask">
+  <LayoutProyecto
+    nombre="Uptask"
+    descripcion="Administrador de proyectos"
+  />
+  <div class="contenedor">
+    <p class="descripcion">
+      Este proyecto esta hecho con html, csss, sass, php, javascript, mysql.
+    </p>
+    <p class="descripcion">
+      Cuenta con registro de usuarios, autenticacion de usuarios y recuperar
+      contraseña con confirmación mediante el envio de correo electronico.La contraseña se guarda hasheada y no en texto plano
+    </p>
+
+    <img
+      class="imagen"
+      src="/img/uptask/registro.png"
+      alt=""
+    />
+
+    <p class="descripcion">
+      Una vez registrado puedes ver y crear tus propios proyectos.
+    </p>
+    <img
+      class="imagen"
+      src="/img/uptask/1.png"
+      alt=""
+    />
+
+    <p class="descripcion">
+      A cada proyecto le puedes agregar tareas y esas tareas marcarlas como
+      pendientes o completadas. Puedes editar, filtar y eliminar las tareas.
+    </p>
+    <img
+      class="imagen"
+      src="/img/uptask/2.png"
+      alt=""
+    />
+    <p class="descripcion">
+      Puedes cambiar la informacion de tu perfil y recuperar la contraseña.
+    </p>
+    <img
+      class="imagen"
+      src="/img/uptask/3.png"
+      alt=""
+    />
+
+    <p class="descripcion">
+      Puedes registrarte con un correo real para confirmar tu cuenta y empezar a
+      usarlo.
+      <a
+        class="enlace"
+        target="_blank"
+        href="https://uptask-franco.alwaysdata.net/"
+        >Enlace</a
+      >
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .descripcion {
+    color: #fff;
+  }
+
+  .imagen {
+    width: 60rem;
+    margin: 2rem auto;
+  }
+
+  .enlace {
+    color: #fff;
+    text-decoration: underline;
+  }
+</style>

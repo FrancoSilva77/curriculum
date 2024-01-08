@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LayoutProyecto from '../layouts/LayoutProyecto.astro';
+---
+
+<Layout title="app salon">
+  <LayoutProyecto
+    nombre="App Salon"
+    descripcion="Administración de citas"
+  />
+  <div class="contenedor">
+    <p class="descripcion">
+      Este proyecto esta hecho con html, csss, sass, php, javascript, mysql.
+    </p>
+    <p class="descripcion">
+      Cuenta con registro de usuarios, autenticacion de usuarios y recuperar
+      contraseña con confirmación mediante el envio de correo electronico. La contraseña se guarda hasheada y no en texto plano.Este
+      proyecto cuenta con roles, uno de los usuarios los cuales podrán agendar
+      citas y un administrador, el cual podrá ver las citas de los usuarios.
+    </p>
+    <img
+      src="/img/barberia/registro.png"
+      alt="Imagen de registro"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      El usuario puede reservar su cita eligiendo los servicios que desea,
+      eligiendo la fecha y hora de la cita para poder reservarla
+    </p>
+    <img
+      src="/img/barberia/1.png"
+      alt="Imagen de eleccion de servicos"
+      class="imagen"
+    />
+    <img
+      src="/img/barberia/2.png"
+      alt="Imagen de eleccion de servicos"
+      class="imagen"
+    />
+    <img
+      src="/img/barberia/3.png"
+      alt="Imagen de eleccion de servicos"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      En la parte de el administrador este puede ver las citas por dia, de igual
+      forma puede agregar nuevos servicios, editar los ya existentes,
+      eliminarlos, y eliminar las citas que sean canceladas.
+    </p>
+    <img
+      src="/img/barberia/4.png"
+      alt="Imagen administrador"
+      class="imagen"
+    />
+    <img
+      src="/img/barberia/5.png"
+      alt="Imagen administrador"
+      class="imagen"
+    />
+    <img
+      src="/img/barberia/6.png"
+      alt="Imagen administrador"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      Puede registrarse con un correo real y verificar su funcionamiento. 
+      <a class="enlace" href="https://barberiafranco.alwaysdata.net/">Enlace</a>
+    </p>
+  </div>
+</Layout>
+
+<style>
+  .contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .descripcion {
+    color: #fff;
+  }
+
+  .imagen {
+    width: 60rem;
+    margin: 2rem auto;
+  }
+
+  .enlace {
+    color: #fff;
+    text-decoration: underline;
+  }
+</style>

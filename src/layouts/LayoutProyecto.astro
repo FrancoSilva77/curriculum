@@ -1,0 +1,28 @@
+---
+export interface Props {
+  nombre: string;
+  descripcion: string;
+}
+
+const { nombre, descripcion } = Astro.props;
+---
+
+<main class="contenedor">
+  <div class="header-proyecto">
+    <h1 class="text-center">{nombre}</h1>
+    <h3 class="text-center">{descripcion}</h3>
+  </div>
+</main>
+<slot />
+
+<style>
+  .contenedor {
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .header-proyecto {
+    margin-top: 5rem;
+  }
+</style>
