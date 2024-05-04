@@ -1,0 +1,102 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LayoutProyecto from '../layouts/LayoutProyecto.astro';
+---
+
+<Layout title="QuiscoApp">
+  <LayoutProyecto
+    nombre="QuioscoApp"
+    descripcion="Proyecto para gestionar ordenes en un restaurant/cafeteria"
+  />
+
+  <div class="contenedor">
+    <p class="descripcion">
+      Este proyecto esta hecho en la parte del frontend con React, React Router
+      Dom, Tailwindcss y en la parte del backend está hecha con Laravel API y
+      Mysql para la base de datos
+    </p>
+
+    <p class="descripcion">
+      En este proyecto cada usuario puede registrarse para poder pedir su orden,
+      una vez que se registre puede iniciar sesión con sus credenciales. Tiene
+      una parte de adminsitrador el cual puede gestionar los pedidos y
+      disponibilidad de los productos.
+    </p>
+
+    <p class="descripcion">
+      En este proyecto cada usuario puede registrarse para poder pedir su orden,
+      una vez que se registre puede iniciar sesión con sus credenciales.
+    </p>
+    <img
+      src="/img/react-quiosco/01.png"
+      alt="Imagen registro"
+      class="imagen"
+    />
+    <img
+      src="/img/react-quiosco/02.png"
+      alt="Imagen iniciar sesión"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      El usuario puede pedir los productos que quiera e ir viendo que es lo que
+      lleva su pedido y poder realizar la orden. Una vez que la orden esta lista
+      se sale de la vista para hacer pedido para poder volver a hacer otro.
+    </p>
+    <img
+      src="/img/react-quiosco/03.png"
+      alt="Imagen iniciar sesión"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      Al administrador le llegan las ordenes de los usuarios.
+    </p>
+    <img
+      src="/img/react-quiosco/04.png"
+      alt="Imagen iniciar sesión"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      También puede gestionar la disponibilidad de los productos como marcar
+      como completado un pedido.
+    </p>
+    <img
+      src="/img/react-quiosco/05.png"
+      alt="Imagen iniciar sesión"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      Puede registrarse con un correo y verificar su funcionamiento.
+      <a
+        target="_blank"
+        class="enlace"
+        href="https://fs-react-quiosco.vercel.app/"
+        >Enlace</a
+      >
+    </p>
+  </div>
+
+  <style>
+    .contenedor {
+      max-width: 120rem;
+      width: 95%;
+      margin: 0 auto;
+    }
+    .descripcion {
+      color: #fff;
+    }
+
+    .imagen {
+      max-width: 60rem;
+      margin: 2rem auto;
+    }
+
+    .enlace {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</Layout>
