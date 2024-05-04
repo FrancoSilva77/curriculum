@@ -1,0 +1,103 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LayoutProyecto from '../layouts/LayoutProyecto.astro';
+---
+
+<Layout title="Administrador de productos y ventas">
+  <LayoutProyecto
+    nombre="Administrador de productos y ventas"
+    descripcion="Proyecto realizado con postgresql, express, react, tailwindcss"
+  />
+
+  <div class="contenedor">
+    <p class="descripcion">
+      En este proyecto puedes ver,crear,editar y eliminar productos además de
+      crear ventas con los productos y visualizar esas ventas
+    </p>
+
+    <p class="descripcion">
+      Podemos visualizar los productos en una tabla para poder realizar las
+      acciones que queramos.
+    </p>
+    <img
+      src="/img/react-productos/01.png"
+      alt="Imagen tabla"
+      class="imagen"
+    />
+
+    <p class="descripcion">Se puede eliminar productos</p>
+    <img
+      src="/img/react-productos/02.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">Se puede crear productos</p>
+    <img
+      src="/img/react-productos/03.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">Se puede editar productos</p>
+    <img
+      src="/img/react-productos/04.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      Se puede cambiar la disponibilidad de los productos
+    </p>
+    <img
+      src="/img/react-productos/05.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">Se puede crear ventas</p>
+    <img
+      src="/img/react-productos/06.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">Se pueden ver las ventas</p>
+    <img
+      src="/img/react-productos/07.png"
+      alt="Imagen productos"
+      class="imagen"
+    />
+
+    <p class="descripcion">
+      Puede ver el funcionamiento de la aplicación en el siguiente enlace
+      <a
+        target="_blank"
+        class="enlace"
+        href="https://pern-react.vercel.app/"
+        >Enlace</a
+      >
+    </p>
+  </div>
+
+  <style>
+    .contenedor {
+      max-width: 120rem;
+      width: 95%;
+      margin: 0 auto;
+    }
+    .descripcion {
+      color: #fff;
+    }
+
+    .imagen {
+      max-width: 60rem;
+      margin: 2rem auto;
+    }
+
+    .enlace {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</Layout>
